@@ -16,7 +16,7 @@ export const MainSectionCenter = styled.div`
   height: 100%;
 `;
 export const MainSection = styled.div`
-  margin-top: 50px;
+  padding: 50px 0px;
 `;
 
 export const Image = styled.img`

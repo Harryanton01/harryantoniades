@@ -84,7 +84,29 @@ const Projects = () => {
       <MainSection>
         <Paragraph>
           I've listed below some examples of real-life solutions I've created
-          for acquaintances, friends and family as well as work.
+          for acquaintances, friends and family. I've also included some work
+          and personal projects.
+        </Paragraph>
+        <Paragraph>
+          <h2>
+            <a
+              href="https://github.com/Harryanton01/Angular-GeoLocation-Online-Store"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Geo-Location Marketplace App (2018)
+            </a>
+          </h2>
+          Built with <strong>Angular</strong> and <strong>TypeScript</strong>. I
+          completed this project as part of my University. I used{" "}
+          <strong>RxJS</strong> to manage state. Integrated{" "}
+          <strong>Firebase</strong> for authentication and to store messages and
+          items in cloud hosted <strong>Realtime NoSQL Database</strong>. Used
+          GeoFire library for location-based queries. The app idea works
+          similarly to how Facebook's Marketplace works, in the sense that users
+          can post items they want to get rid of, and other users that are
+          geographically local can search for these items and message the person
+          giving it away for further details.
         </Paragraph>
         <Paragraph>
           <h2>
@@ -101,7 +123,12 @@ const Projects = () => {
           for that purpose. It's built in <strong>Angular</strong>, and I have
           to admit that it didn't need to necessarily be an SPA because it
           doesn't have much interactivity, however I did want to practice my
-          skills at the time which was why I used that framework.
+          skills at the time which was why I used that framework. I used{" "}
+          <strong>Firebase's NoSQL Firestore Database</strong> to store art
+          items so that my aunt could easily upload them there and it would
+          automatically update the website. I also added a functionality to
+          login and manually sort the art pieces with a drag and drop feature,
+          by updating the sort order value in the database.
         </Paragraph>
         <Paragraph>
           <h2>
@@ -146,6 +173,49 @@ const Projects = () => {
           <strong>SOQL</strong> to query for and retreive article data from the
           platform.
         </Paragraph>
+        <Paragraph>
+          <h2>
+            <a
+              href="https://github.com/Harryanton01/React-GameStore-Redux"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Game Store Dummy Project with Redux (2021)
+            </a>
+          </h2>
+          I created this game store dummy project to showcase my class based{" "}
+          <strong>React</strong> skills at the time. I've since moved on to the
+          modern way of developing React apps with functions instead (see
+          project after). I created a game store app, which lets you add and
+          remove games from a cart as well as change the currency. I used Redux
+          to manage state and styled components for styling the app.
+        </Paragraph>
+        <Paragraph>
+          <h2>
+            <a
+              href="https://github.com/Harryanton01/React-Game-Store"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Game Store Dummy Project (2022)
+            </a>
+          </h2>
+          Built with <strong>React</strong> and <strong>TypeScript</strong>. I
+          decided this year that I wanted to move into Frontend Development as a
+          full-time job. I embarked on a journey of reading up a lot more about
+          the fundamentals of{" "}
+          <strong>JavaScript, TypeScript, React and CSS (Flexbox)</strong>. I
+          wanted to embed all my updated and newfound knowledge into this
+          project, to also demonstrate my current skills. The app concept is
+          identical to the previous iteration, with a lot of improvements. For
+          one I used the modern style of creating functional React components,
+          instead of class based. I used the <strong>Context API</strong> and
+          custom <strong>hooks</strong> to manage state.{" "}
+          <strong>styled-components</strong> were also used for styling. I also
+          used <strong>Axios</strong> to retreive the latest currency conversion
+          rates from a public Exchange Rates API. Tests are written with the{" "}
+          <strong>React Testing Library and Jest</strong>.
+        </Paragraph>
       </MainSection>
     </AppContainer>
   );
@@ -164,7 +234,7 @@ const Home = () => {
         </SecondaryText>
 
         <SecondaryText>
-          I also anjoy watching/playing football and gym.
+          I also enjoy watching/playing football and gym.
         </SecondaryText>
       </MainSectionCenter>
     </AppContainer>
