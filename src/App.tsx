@@ -12,7 +12,7 @@ import {
   StyledLink,
   Paragraph,
 } from "./styles";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 
 const cvLink =
   "https://firebasestorage.googleapis.com/v0/b/harryantoniades-240c5.appspot.com/o/Harry_Antoniades.pdf?alt=media&token=45dc92f9-7fd8-4afa-a2e7-cdd55741fac9";
@@ -65,12 +65,16 @@ const AboutMe = () => {
           <a href={cvLink} target="_blank" rel="noreferrer">
             <strong>CV</strong>
           </a>
-          , so please do freel free to check it out. Also, you're more than
+          , so please do feel free to check it out. Also, you're more than
           welcome to find them on my{" "}
           <a href={gitHubLink} target="_blank" rel="noreferrer">
             <strong>GitHub</strong>
-          </a>
-          .
+          </a>{" "}
+          or the{" "}
+          <Link to="/projects">
+            <strong>projects page</strong>
+          </Link>{" "}
+          on my website .
         </Paragraph>
         <Paragraph>Let's talk soon!</Paragraph>
       </MainSection>
