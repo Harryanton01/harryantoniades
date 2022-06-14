@@ -2,9 +2,12 @@ import styled from "styled-components";
 import { NavLink } from "react-router-dom";
 
 export const AppContainer = styled.div`
-  height: 100vh;
   box-sizing: border-box;
   padding: 2em;
+  height: 100vh;
+  @media screen and (max-width: 768px) {
+    height: auto;
+  }
 `;
 export const MainSectionCenter = styled.div`
   display: flex;
@@ -15,8 +18,28 @@ export const MainSectionCenter = styled.div`
   position: relative;
   height: 100%;
 `;
-export const MainSection = styled.div`
-  padding: 50px 0px;
+
+export const NavButton = styled.button`
+  border: 0;
+  height: 40px;
+  width: 40px;
+  padding: 0.5rem;
+  border-radius: 50%;
+  background-color: #283b8b;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+  // positions the icon to the right and center aligns it vertically
+  position: relative;
+  top: 27px;
+  left: 90%;
+  transform: translateY(-50%);
+  display: none;
+  &:hover {
+    background-color: #2642af;
+  }
+  @media screen and (max-width: 768px) {
+    display: flex;
+  }
 `;
 
 export const Image = styled.img`
@@ -37,19 +60,35 @@ export const SecondaryText = styled.span`
 export const Paragraph = styled.p`
   font-size: 16px;
   padding: 5px 30%;
+  @media screen and (max-width: 1280px) {
+    padding: 5px 5%;
+  }
 `;
 
 export const Nav = styled.nav`
   text-align: center;
   width: 100%;
-  position: absolute;
+  position: relative;
   right: 0px;
   left: 0px;
   top: 0px;
 `;
 
-export const List = styled.ul`
+export const List = styled.ul<{ isExpanded: boolean }>`
   list-style: none;
+  @media screen and (max-width: 768px) {
+    display: ${(props) => (props.isExpanded ? "none" : "flex")};
+    position: relative;
+    flex-direction: column;
+    width: 100%;
+    background-color: white;
+
+    padding: 0;
+  }
+  & > a {
+    border: 1px solid black;
+    height: 30px;
+  }
 `;
 
 export const ListItem = styled.li`
