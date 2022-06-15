@@ -9,6 +9,10 @@ export const AppContainer = styled.div`
     height: auto;
   }
 `;
+export const PageContainer = styled.div`
+  box-sizing: border-box;
+  padding: 2em;
+`;
 export const MainSectionCenter = styled.div`
   display: flex;
   background-color: white;
@@ -64,7 +68,12 @@ export const Paragraph = styled.p`
     padding: 5px 5%;
   }
 `;
-
+export const Title = styled.h2`
+  padding: 5px 30%;
+  @media screen and (max-width: 1280px) {
+    padding: 5px 5%;
+  }
+`;
 export const Nav = styled.nav`
   text-align: center;
   width: 100%;
@@ -73,7 +82,10 @@ export const Nav = styled.nav`
   left: 0px;
   top: 0px;
 `;
-
+export const StyledImage = styled.img`
+  width: 100%;
+  padding-bottom: 20px;
+`;
 export const List = styled.ul<{ isExpanded: boolean }>`
   list-style: none;
   @media screen and (max-width: 768px) {
