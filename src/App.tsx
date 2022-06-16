@@ -71,8 +71,8 @@ const AboutMe = () => {
       </Paragraph>
       <Paragraph>
         I am a previous Computer Science graduate with a lot of hunger to pursue
-        JavaScript development, and have dedicated alot of time to self-training
-        in technologies such as React, JavaScript and HTML/CSS.
+        JavaScript development, and have dedicated a lot of time to
+        self-training in technologies such as React, JavaScript and HTML/CSS.
       </Paragraph>
       <Paragraph>
         This has translated into 6 months of commercial experience working with
