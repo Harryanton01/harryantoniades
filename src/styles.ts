@@ -94,12 +94,11 @@ export const List = styled.ul<{ isExpanded: boolean }>`
     flex-direction: column;
     width: 100%;
     background-color: white;
-
     padding: 0;
-  }
-  & > a {
-    border: 1px solid black;
-    height: 30px;
+    & > a {
+      border: 1px solid black;
+      height: 30px;
+    }
   }
 `;
 
