@@ -74,14 +74,14 @@ const AboutMe = () => {
         self-training in technologies such as React, JavaScript and HTML/CSS.
       </Paragraph>
       <Paragraph>
-        This has translated into 6 months of commercial experience working with
-        JavaScript, specifically developing Salesforce Lightning Web Components.
-        I also worked with some React components.
+        This has translated into a year of commercial experience working with
+        JavaScript, specifically developing Salesforce Lightning Web Components
+        and developing a React based documentation site.
       </Paragraph>
       <Paragraph>
         Beyond this, I've completed multiple personal projects, whilst learning
         to utilise an array of technologies (React, JavaScript, TypeScript,
-        HTML, CSS).
+        HTML, JSX, CSS).
       </Paragraph>
       <Paragraph>
         I've detailed all my projects/experience in my{" "}
