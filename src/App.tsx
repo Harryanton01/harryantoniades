@@ -18,7 +18,8 @@ import {
 } from "./styles";
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 
-const cvLink = "gs://harryantoniades-240c5.appspot.com/Harry_Antoniades.pdf";
+const cvLink =
+  "https://firebasestorage.googleapis.com/v0/b/harryantoniades-240c5.appspot.com/o/Harry_Antoniades.pdf?alt=media&token=ded55ce5-9f84-4a7c-81e2-182663ada43f";
 const gitHubLink = "https://github.com/Harryanton01";
 
 const NavBar = () => {
