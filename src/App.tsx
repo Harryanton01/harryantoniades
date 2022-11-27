@@ -144,6 +144,30 @@ const Projects = () => {
       </Paragraph>
       <Title>
         <a
+          href="https://docs.gameanalytics.com/"
+          target="_blank"
+          rel="noreferrer"
+        >
+          docs.gameanalytics.com (2022)
+        </a>
+      </Title>
+      <Paragraph>
+        <StyledImage
+          src="https://i.imgur.com/NK9UZnT.png"
+          alt="GameAnalytics Docs Page"
+        />
+        Built with <strong>React</strong> and <strong>JavaScript</strong>. I
+        styled the GameAnalytics current documentation using{" "}
+        <strong>CSS</strong> and <strong>Flexbox</strong> for the layout. I also
+        created several components to help the customers navigate through the
+        website. <strong>React Hooks</strong> were used for state management to
+        retrieve the current theme (light & dark mode), and adapted icons and
+        other general styles based on that. the I created knowledge articles
+        using <strong>Markdown</strong>. The website was generated from a static
+        site generator: docusaurus.io.
+      </Paragraph>
+      <Title>
+        <a
           href="https://github.com/Harryanton01/React-GameStore-Redux"
           target="_blank"
           rel="noreferrer"
@@ -165,11 +189,11 @@ const Projects = () => {
       </Paragraph>
       <Title>
         <a
-          href="https://gameanalytics.com/docs"
+          href="https://gameanalytics.force.com/knowledgebase/s/"
           target="_blank"
           rel="noreferrer"
         >
-          gameanalytics.com/docs (2020 - Present)
+          Previous gameanalytics.com/docs (2020 - 2022)
         </a>
       </Title>
       <Paragraph>
@@ -183,7 +207,8 @@ const Projects = () => {
         our docs. I had to create and customise several{" "}
         <strong>Lightning Web Components</strong>, using{" "}
         <strong>JavaScript</strong> for interactivity and <strong>SOQL</strong>{" "}
-        to query for and retreive article data from the platform.
+        to query for and retreive article data from the platform. This has since
+        been replaced with a new iteration I mention above.
       </Paragraph>
       <Title>
         <a href="https://agcharalampos.gr/" target="_blank" rel="noreferrer">
