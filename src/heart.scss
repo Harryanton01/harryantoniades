@@ -20,11 +20,8 @@
 }
 
 .text {
-  position: absolute;
-  right: 39%;
-  top: 60px;
+  text-align: center;
   color: white;
-  z-index: 10000;
   font-family: "Montserrat";
   font-size: 60px;
   line-height: 1.1em;
@@ -32,15 +29,21 @@
   animation: fadeIn 10s;
 }
 
+.textWrapper {
+  position: absolute;
+  top: 80px;
+}
+
 @media all and (max-width: 480px) {
-  .text {
-    position: absolute;
-    right: 1%;
+  .textWrapper {
     top: 300px;
+  }
+
+  .text {
+    text-align: center;
     color: white;
-    z-index: 10000;
     font-family: "Montserrat";
-    font-size: 60px;
+    font-size: 30px;
     line-height: 1.1em;
     font-weight: 600;
     animation: fadeIn 10s;
