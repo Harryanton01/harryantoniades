@@ -1,10 +1,15 @@
 import DOMPurify from "dompurify";
 import "./heart.scss";
 
-const rawHTML = `
+import { getDatabase, get, ref, child } from "firebase/database";
+import { useState } from "react";
+
+const getRawHTML = (value: string) => `
 <div class="body">
   <div class="night"></div>
-  <div class="text">Μου λείπεις ❤️</div>
+  <div class="textWrapper">
+    <div class="text">${value}</div>
+  </div>
   <div class="flowers">
     <div class="flower flower--1">
       <div class="flower__leafs flower__leafs--1">
@@ -281,9 +286,29 @@ const rawHTML = `
 </div>
 `;
 
-export const Heart = () => (
-  <div
-    className="content"
-    dangerouslySetInnerHTML={{ __html: DOMPurify.sanitize(rawHTML) }}
-  ></div>
-);
+export const Heart = () => {
+  const [value, setValue] = useState("");
+
+  const dbRef = ref(getDatabase());
+  get(child(dbRef, "text"))
+    .then((snapshot) => {
+      if (snapshot.exists()) {
+        setValue(snapshot.val().val);
+        console.log(snapshot.val());
+      } else {
+        console.log("No data available");
+      }
+    })
+    .catch((error) => {
+      console.error(error);
+    });
+
+  return (
+    <div
+      className="content"
+      dangerouslySetInnerHTML={{
+        __html: DOMPurify.sanitize(getRawHTML(value)),
+      }}
+    ></div>
+  );
+};

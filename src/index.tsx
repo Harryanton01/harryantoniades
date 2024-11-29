@@ -14,6 +14,8 @@ firebase.initializeApp({
   messagingSenderId: "846195080212",
   appId: "1:846195080212:web:08188510b225945b42bb01",
   measurementId: "G-DTHSEEXB6K",
+  databaseURL:
+    "https://harryantoniades-240c5-default-rtdb.europe-west1.firebasedatabase.app",
 });
 
 const root = ReactDOM.createRoot(
